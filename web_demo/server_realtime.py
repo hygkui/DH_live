@@ -178,6 +178,7 @@ async def eb_stream(request: Request):
         else:
             raise HTTPException(status_code=400, detail="Invalid input mode")
     except Exception as e:
+        print(e)
         raise HTTPException(status_code=500, detail=str(e))
 
 # 启动Uvicorn服务器

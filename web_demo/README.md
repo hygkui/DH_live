@@ -132,3 +132,15 @@ llm_client = OpenAI(
 
 - [Project AIRI](https://github.com/moeru-ai/airi)
 - [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx)
+
+
+
+===== 
+
+实际步骤：
+安装 pip install openai soundfile
+下载两个 model ASR & TTS，放到 web_demo/models 目录下，解压 `tar jxvf xxx.tar.bz2`
+运行 在上一级目录 python web_demo/server_realtime.py
+访问网页 http://localhost:8888/static/MiniLive.html 目前只支持文字聊天的。
+
+ 效果见图片 ![ts](./01.png)
